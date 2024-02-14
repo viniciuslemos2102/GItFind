@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  "Inter", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+body{
+    background-color: #1d2128;
+}
+hr{
+    background-color: rgb(229, 229, 299, 0.2);   
+    border: 1px solid rgb(229, 229, 299, 0.2);
+}
