@@ -20,10 +20,10 @@ function App() {
       setCurrentUser({avatar_url,name,bio, login});
 
       const ReposData = await fetch(`https://api.github.com/users/${user}/repos`);
-      const newRepos = await userData.json();
+      const newRepos = await ReposData.json();
 
       if(newRepos.length){
-        setRepos.newRepos();
+        setRepos(newRepos);
       }
     }
   }
@@ -46,7 +46,7 @@ function App() {
               <img src={CurrentUser.avatar_url} className='profile' alt='image de perfil'/>
               <div>
                 <h3>{CurrentUser.name}</h3>
-                <span>{CurrentUser.login} </span>
+                <span> @{CurrentUser.login}</span>
                 <p>{CurrentUser.bio} </p>
               </div>
             </div>

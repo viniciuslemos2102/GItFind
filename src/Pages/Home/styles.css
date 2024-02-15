@@ -19,7 +19,7 @@
     color: #fff;
 }
 
-input{
+input {
     border: 1px solid #999999;
     border-radius: 22px;
     min-width: 250px;
@@ -29,6 +29,10 @@ input{
     background-color: transparent;
     font-size: 18px;
     padding: 10px;
+}
+
+input:focus {
+    border-color: #005a03; 
 }
 
 button{
@@ -62,7 +66,7 @@ button{
 }
 
 .perfil h3{
-    color: #999999;
+    color: #e0e0e0;
     font-size: 24px;
     margin: 0;
 }
